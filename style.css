@@ -10,6 +10,7 @@ h1 {
 
 h2 {
     color: #2c3e50;
+    margin-top: 30px;
 }
 
 ul {
@@ -19,4 +20,12 @@ ul {
 img {
     width: 150px;
     border-radius: 10px;
+}
+a {
+    color: #1e4f8a;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
