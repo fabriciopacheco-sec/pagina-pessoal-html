@@ -6,6 +6,9 @@ body {
 
 /* HEADER */
 header {
+
+    background: linear-gradient(135deg, #2980b9 30%, #2c3e50 90%);
+
     background-color: #ffffff;
     text-align: center;
     padding: 20px;
@@ -77,4 +80,11 @@ footer {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
+}
+
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
