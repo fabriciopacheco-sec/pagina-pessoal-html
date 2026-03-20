@@ -62,7 +62,7 @@ ul {
 }
 
 /* IMAGEM */
-img {
+.pfp {
     border: 3px solid #3498db;
     width: 150px;
     border-radius: 10px;
@@ -238,6 +238,32 @@ footer {
     footer {
         max-width: 800px;
     }
+}
+
+.jsicon {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    margin: 5px;
+}
+
+.iconcss {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    margin: 5px;
+
+}
+
+.htmlicon {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    margin: 5px;
+
 }
 
 
