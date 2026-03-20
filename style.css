@@ -1,5 +1,5 @@
 body {
-    background-color: #f4f6f8;
+    background: linear-gradient(100deg,#297fb9c7 20%, #2c3e50 90%);
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
@@ -8,15 +8,18 @@ body {
 header {
 
     background: linear-gradient(135deg, #2980b9 30%, #2c3e50 90%);
-
-    background-color: #ffffff;
     text-align: center;
     padding: 20px;
     border-bottom: 1px solid #ddd;
+    
+}
+
+header a {
+    color: #ecf0f1;
 }
 
 h1 {
-    color: #1a1a1a;
+    color: #ffffff;
 }
 
 /* MAIN */
@@ -31,7 +34,7 @@ section {
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
-    transition: 0.2s;
+    transition: transform 0.2s;
 }
 
 section:hover {
@@ -40,6 +43,9 @@ section:hover {
 
 /* TÍTULOS */
 h2 {
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
     color: #2c3e50;
     margin-top: 0;
 }
@@ -57,6 +63,7 @@ ul {
 
 /* IMAGEM */
 img {
+    border: 3px solid #3498db;
     width: 150px;
     border-radius: 10px;
     display: block;
@@ -65,6 +72,7 @@ img {
 
 /* LINKS */
 a {
+    font-weight: bold;
     color: #3498db;
     text-decoration: none;
 }
@@ -80,6 +88,8 @@ footer {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
+    box-sizing: border-box;
+    
 }
 
 .sobre {
@@ -88,3 +98,147 @@ footer {
     justify-content: space-between;
     gap: 20px;
 }
+
+/* RESPONSIVIDADE */
+
+/* Mobile - até 480px */
+@media (max-width: 480px) {
+    body {
+        background: linear-gradient(100deg, #297fb9c7 20%, #2c3e50 90%);
+        background-attachment: fixed;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin: 10px 0;
+    }
+
+    header p {
+        margin: 10px 0;
+    }
+
+    main {
+        max-width: 100%;
+        margin: 15px;
+        padding: 0 10px;
+    }
+
+    section {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+        padding-bottom: 8px;
+        margin-bottom: 15px;
+    }
+
+    p, li {
+        font-size: 14px;
+    }
+
+    img {
+        width: 120px;
+        height: auto;
+    }
+
+    .sobre {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .sobre img {
+        margin: 0 auto;
+    }
+
+    footer {
+        max-width: 100%;
+        margin: 15px;
+        padding: 15px;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+}
+
+/* Tablet - de 481px a 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        background-attachment: fixed;
+    }
+
+    header {
+        padding: 18px;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin: 12px 0;
+    }
+
+    main {
+        max-width: 90%;
+        margin: 25px auto;
+    }
+
+    section {
+        padding: 18px;
+        margin-bottom: 18px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    img {
+        width: 140px;
+        height: auto;
+    }
+
+    .sobre {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    footer {
+        max-width: 90%;
+        margin: 25px auto;
+        padding: 18px;
+    }
+}
+
+/* Desktop - acima de 769px */
+@media (min-width: 769px) {
+    main {
+        max-width: 800px;
+    }
+
+    .sobre {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    footer {
+        max-width: 800px;
+    }
+}
+
+
+    
